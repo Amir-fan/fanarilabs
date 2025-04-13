@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fanari Labs</title>
+    <meta name="description" content="Get in touch with Fanari Labs. We're here to help with your digital innovation needs. Contact us via WhatsApp, Instagram, email, or phone.">
+    
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/fanari-labs-logo.png">
+    <link rel="apple-touch-icon" href="images/fanari-labs-logo.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="translations.js" defer></script>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Fanari Labs Home">
+                <img src="images/fanari-labswhite.png" 
+                     alt="Fanari Labs Logo" 
+                     width="180">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="why-us.html" class="nav-link" data-i18n="nav.whyUs">Why Us?</a>
+                <a href="index.html#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="language-selector">
+                <select class="lang-select" id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </div>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero contact-hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="contact.heroTitle">Let's Connect</h1>
+            <p class="hero-tagline" data-i18n="contact.heroSubtitle">We're here to help with your digital innovation needs</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-card whatsapp-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 data-i18n="contact.whatsappTitle">Chat on WhatsApp</h3>
+                    <p data-i18n="contact.whatsappDesc">Get instant support and quick responses</p>
+                    <a href="https://wa.me/905379295163" class="contact-button whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="contact.whatsapp">Start Chat</span>
+                    </a>
+                </div>
+
+                <div class="contact-card instagram-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 data-i18n="contact.instagramTitle">Follow on Instagram</h3>
+                    <p data-i18n="contact.instagramDesc">Stay updated with our latest projects</p>
+                    <a href="https://instagram.com/fanari.labs" class="contact-button instagram-button" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span data-i18n="contact.instagram">Follow Us</span>
+                    </a>
+                </div>
+
+                <div class="contact-card email-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 data-i18n="contact.emailTitle">Send us an Email</h3>
+                    <p data-i18n="contact.emailDesc">For detailed inquiries and proposals</p>
+                    <a href="mailto:fanarilabs@gmail.com" class="contact-button email-button" aria-label="Send email to Fanari Labs">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact.email">fanarilabs@gmail.com</span>
+                    </a>
+                </div>
+
+                <div class="contact-card phone-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 data-i18n="contact.phoneTitle">Call Us</h3>
+                    <p data-i18n="contact.phoneDesc">Available during business hours</p>
+                    <a href="tel:+905379295163" class="contact-button phone-button" aria-label="Call Fanari Labs">
+                        <i class="fas fa-phone"></i>
+                        <span data-i18n="contact.phone">+90 (537) 929-51-63</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Fanari Labs — <span data-i18n="footer.crafted">Crafted with code. Driven by creativity.</span></p>
+            <div class="footer-links">
+                <a href="index.html#services" data-i18n="nav.services">Services</a>
+                <a href="index.html#about" data-i18n="nav.about">About</a>
+                <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize translations
+        document.addEventListener('DOMContentLoaded', function() {
+            const langSelect = document.getElementById('languageSelect');
+            if (!langSelect) return;
+
+            // Set initial language
+            const currentLang = localStorage.getItem('language') || 'en';
+            langSelect.value = currentLang;
+            updateContent(currentLang);
+
+            // Handle language change
+            langSelect.addEventListener('change', function(e) {
+                const newLang = e.target.value;
+                localStorage.setItem('language', newLang);
+                updateContent(newLang);
+            });
+        });
+    </script>
+</body>
+</html> 
