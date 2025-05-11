@@ -126,4 +126,62 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optimize touch events
     document.addEventListener('touchstart', () => {}, { passive: true });
     document.addEventListener('touchmove', () => {}, { passive: true });
-}); 
+});
+
+// Language Translation
+document.addEventListener('DOMContentLoaded', function() {
+    const languageSelect = document.getElementById('languageSelect');
+    if (!languageSelect) return;
+
+    // Set initial language from localStorage or default to English
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    languageSelect.value = savedLanguage;
+    updateContent(savedLanguage);
+
+    // Update language when selection changes
+    languageSelect.addEventListener('change', function() {
+        const selectedLanguage = this.value;
+        localStorage.setItem('selectedLanguage', selectedLanguage);
+        updateContent(selectedLanguage);
+    });
+});
+
+function updateContent(lang) {
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const translation = getTranslation(key, lang);
+        if (translation) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = translation;
+            } else {
+                element.textContent = translation;
+            }
+        }
+    });
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Update RTL for Arabic
+    if (lang === 'ar') {
+        document.documentElement.dir = 'rtl';
+    } else {
+        document.documentElement.dir = 'ltr';
+    }
+}
+
+function getTranslation(key, lang) {
+    const keys = key.split('.');
+    let translation = translations[lang];
+    
+    for (const k of keys) {
+        if (translation && translation[k] !== undefined) {
+            translation = translation[k];
+        } else {
+            return null;
+        }
+    }
+    
+    return translation;
+} 

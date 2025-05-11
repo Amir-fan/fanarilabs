@@ -120,6 +120,43 @@ const translations = {
         },
         footer: {
             crafted: "Crafted with code. Driven by creativity."
+        },
+        work: {
+            title: "Our Work",
+            subtitle: "Discover our latest projects and digital innovations",
+            projects: {
+                spaceNova: {
+                    title: "Space Nova",
+                    description: "An immersive space exploration website that takes users on a journey through the cosmos, featuring interactive elements and stunning visuals.",
+                    tags: ["Space", "Interactive", "Education"]
+                },
+                mayarBison: {
+                    title: "Mayar Bison",
+                    description: "A dynamic energy drink brand website showcasing their product line with modern design and engaging content.",
+                    tags: ["Energy Drinks", "Branding", "E-commerce"]
+                },
+                numaraAmbalaj: {
+                    title: "10 Numara Ambalaj",
+                    description: "A professional packaging company website featuring their product catalog and services with a clean, corporate design.",
+                    tags: ["Packaging", "Corporate", "Industrial"]
+                },
+                clouds: {
+                    title: "Clouds Website",
+                    description: "A whimsical and creative website showcasing cloud-themed products with an engaging and playful design.",
+                    tags: ["Creative", "Product Showcase", "Interactive"]
+                },
+                gymDemo: {
+                    title: "Gym Demo",
+                    description: "A modern fitness center website featuring class schedules, membership plans, and a dynamic user interface.",
+                    tags: ["Fitness", "Membership", "Modern Design"]
+                }
+            },
+            viewProject: "View Project",
+            cta: {
+                title: "Ready to Start Your Project?",
+                subtitle: "Let's create something extraordinary together",
+                button: "Get in Touch"
+            }
         }
     },
     ar: {
@@ -242,6 +279,43 @@ const translations = {
         },
         footer: {
             crafted: "مصمم بالكود. مدفوع بالإبداع."
+        },
+        work: {
+            title: "أعمالنا",
+            subtitle: "اكتشف أحدث مشاريعنا وابتكاراتنا الرقمية",
+            projects: {
+                spaceNova: {
+                    title: "سبيس نوفا",
+                    description: "موقع استكشاف فضائي غامر يأخذ المستخدمين في رحلة عبر الكون، مع ميزات تفاعلية ورسومات مذهلة.",
+                    tags: ["فضاء", "تفاعلي", "تعليمي"]
+                },
+                mayarBison: {
+                    title: "مايار بيسون",
+                    description: "موقع ديناميكي لعلامة مشروبات الطاقة يعرض خط منتجاتهم بتصميم عصري ومحتوى جذاب.",
+                    tags: ["مشروبات الطاقة", "العلامة التجارية", "التجارة الإلكترونية"]
+                },
+                numaraAmbalaj: {
+                    title: "10 نومارا أمبالاج",
+                    description: "موقع احترافي لشركة تعبئة وتغليف يعرض كتالوج منتجاتهم وخدماتهم بتصميم نظيف وعصري.",
+                    tags: ["تعبئة وتغليف", "شركات", "صناعي"]
+                },
+                clouds: {
+                    title: "موقع كلاودز",
+                    description: "موقع إبداعي ومرح يعرض منتجات بأسلوب السحب بتصميم جذاب ولعب.",
+                    tags: ["إبداعي", "عرض المنتجات", "تفاعلي"]
+                },
+                gymDemo: {
+                    title: "صالة رياضية",
+                    description: "موقع عصري لمركز لياقة بدنية يعرض جداول الفصول وخطط العضوية وواجهة مستخدم ديناميكية.",
+                    tags: ["لياقة بدنية", "عضوية", "تصميم عصري"]
+                }
+            },
+            viewProject: "عرض المشروع",
+            cta: {
+                title: "هل أنت مستعد لبدء مشروعك؟",
+                subtitle: "دعنا نخلق شيئاً استثنائياً معاً",
+                button: "تواصل معنا"
+            }
         }
     },
     tr: {
@@ -364,6 +438,43 @@ const translations = {
         },
         footer: {
             crafted: "Kodla tasarlandı. Yaratıcılıkla yönlendirildi."
+        },
+        work: {
+            title: "Çalışmalarımız",
+            subtitle: "En son projelerimizi ve dijital yeniliklerimizi keşfedin",
+            projects: {
+                spaceNova: {
+                    title: "Space Nova",
+                    description: "Etkileşimli öğeler ve etkileyici görsellerle kullanıcıları kozmosta bir yolculuğa çıkaran sürükleyici bir uzay keşif web sitesi.",
+                    tags: ["Uzay", "Etkileşimli", "Eğitim"]
+                },
+                mayarBison: {
+                    title: "Mayar Bison",
+                    description: "Modern tasarım ve etkileyici içerikle ürün yelpazesini sergileyen dinamik bir enerji içeceği marka web sitesi.",
+                    tags: ["Enerji İçecekleri", "Markalaşma", "E-ticaret"]
+                },
+                numaraAmbalaj: {
+                    title: "10 Numara Ambalaj",
+                    description: "Temiz, kurumsal tasarımla ürün kataloğunu ve hizmetlerini sunan profesyonel bir ambalaj şirketi web sitesi.",
+                    tags: ["Ambalaj", "Kurumsal", "Endüstriyel"]
+                },
+                clouds: {
+                    title: "Clouds Website",
+                    description: "Etkileyici ve eğlenceli tasarımla bulut temalı ürünleri sergileyen yaratıcı bir web sitesi.",
+                    tags: ["Yaratıcı", "Ürün Vitrini", "Etkileşimli"]
+                },
+                gymDemo: {
+                    title: "Gym Demo",
+                    description: "Ders programları, üyelik planları ve dinamik kullanıcı arayüzü sunan modern bir fitness merkezi web sitesi.",
+                    tags: ["Fitness", "Üyelik", "Modern Tasarım"]
+                }
+            },
+            viewProject: "Projeyi Görüntüle",
+            cta: {
+                title: "Projenize Başlamaya Hazır mısınız?",
+                subtitle: "Birlikte olağanüstü bir şey yaratalım",
+                button: "İletişime Geçin"
+            }
         }
     },
     de: {
@@ -486,6 +597,43 @@ const translations = {
         },
         footer: {
             crafted: "Mit Code gestaltet. Von Kreativität angetrieben."
+        },
+        work: {
+            title: "Unsere Arbeit",
+            subtitle: "Entdecken Sie unsere neuesten Projekte und digitalen Innovationen",
+            projects: {
+                spaceNova: {
+                    title: "Space Nova",
+                    description: "Eine immersive Weltraum-Explorations-Website, die Benutzer mit interaktiven Elementen und beeindruckenden Visualisierungen auf eine Reise durch den Kosmos mitnimmt.",
+                    tags: ["Weltraum", "Interaktiv", "Bildung"]
+                },
+                mayarBison: {
+                    title: "Mayar Bison",
+                    description: "Eine dynamische Website für eine Energy-Drink-Marke, die ihre Produktlinie mit modernem Design und ansprechendem Content präsentiert.",
+                    tags: ["Energy Drinks", "Branding", "E-Commerce"]
+                },
+                numaraAmbalaj: {
+                    title: "10 Numara Ambalaj",
+                    description: "Eine professionelle Website für ein Verpackungsunternehmen mit Produktkatalog und Dienstleistungen in einem klaren, unternehmerischen Design.",
+                    tags: ["Verpackung", "Unternehmen", "Industrie"]
+                },
+                clouds: {
+                    title: "Clouds Website",
+                    description: "Eine verspielte und kreative Website, die wolkenbezogene Produkte mit einem ansprechenden und spielerischen Design präsentiert.",
+                    tags: ["Kreativ", "Produktpräsentation", "Interaktiv"]
+                },
+                gymDemo: {
+                    title: "Gym Demo",
+                    description: "Eine moderne Fitnesscenter-Website mit Kursplänen, Mitgliedschaftsplänen und einer dynamischen Benutzeroberfläche.",
+                    tags: ["Fitness", "Mitgliedschaft", "Modernes Design"]
+                }
+            },
+            viewProject: "Projekt ansehen",
+            cta: {
+                title: "Bereit für Ihr Projekt?",
+                subtitle: "Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen",
+                button: "Kontakt aufnehmen"
+            }
         }
     }
 };
